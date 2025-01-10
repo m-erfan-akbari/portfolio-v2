@@ -15,7 +15,7 @@ export default function About() {
         <h1
           className={`pb-1 pt-8 text-4xl font-bold text-teal-300 portrait:pb-5 portrait:pt-16 portrait:text-6xl ${styles.name}`}
         >
-          Mohammad Erfan Akbari.
+          Mohammad Erfan Akbari
         </h1>
         <h3
           className={`pb-8 pt-1 text-4xl font-bold text-teal-300 portrait:pb-16 portrait:text-6xl ${styles.position}`}

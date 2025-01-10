@@ -9,15 +9,15 @@ export default function Connect() {
     >
       <div className="max-w-[50%]">
         <h3 className="my-3 text-4xl text-slate-50 portrait:text-6xl">
-          Let's Connect!
+          Let&apos;s Connect!
         </h3>
         <p className="max-w-[40rem] text-lg font-light portrait:max-w-[75dvw] portrait:text-5xl portrait:leading-tight">
           {/* Im open to connecting! <br />
           Feel free to message me if you have a question, a comment, or just
           want to say good morning. */}
-          I'm always excited to hear from fellow creatives and curious minds.
-          Feel free to reach out for a friendly chat or to explore potential
-          collaborations. Drop me a message&nbsp;
+          I&apos;m always excited to hear from fellow creatives and curious
+          minds. Feel free to reach out for a friendly chat or to explore
+          potential collaborations. Drop me a message&nbsp;
           <Link href={'https://t.me/mohammaderrfan'} className="text-teal-300">
             here!
           </Link>
