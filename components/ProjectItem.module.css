@@ -1,0 +1,54 @@
+.image_container {
+  height: calc(50vw / 2.22);
+  transition: all 0.25s ease-in-out;
+}
+
+.image_container > * {
+  transition: all 0.25s ease-in-out;
+}
+
+.container {
+  animation: container-animation linear;
+  animation-timeline: scroll();
+  z-index: -1;
+}
+
+@keyframes container-animation {
+  0%,
+  56% {
+    z-index: -1;
+    transform: translateY(100vh);
+  }
+  60% {
+    z-index: 1;
+  }
+  95%,
+  100% {
+    /* z-index: -1; */
+    transform: translateY(-300vh);
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes container-animation {
+    0%,
+    40% {
+      z-index: -1;
+      opacity: 0;
+      transform: translateY(110dvh);
+    }
+    42% {
+      z-index: 1;
+    }
+    60% {
+      z-index: 1;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90%,
+    100% {
+      opacity: 0;
+      transform: translateY(-280dvh);
+    }
+  }
+}

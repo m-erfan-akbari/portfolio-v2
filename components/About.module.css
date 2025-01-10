@@ -1,0 +1,134 @@
+.container {
+  gap: 4rem;
+  width: 200vw;
+  transform: translateX(-50vw);
+  animation: parallax linear;
+  animation-timeline: scroll();
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes parallax {
+  0% {
+    gap: 4rem;
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  24%,
+  100% {
+    gap: 120rem;
+    opacity: 0;
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes parallax {
+    0% {
+      gap: 4rem;
+      opacity: 1;
+    }
+    10% {
+      opacity: 0;
+      margin-top: -30dvh;
+    }
+    24%,
+    100% {
+      z-index: -1;
+      gap: 120rem;
+      opacity: 0;
+    }
+  }
+}
+
+.hand {
+  animation:
+    fade-in 3000ms ease,
+    handshake 2100ms 3000ms infinite;
+  transform-origin: 75% 75%;
+  display: inline-block;
+  cursor: default;
+}
+
+.hand::selection {
+  background-color: transparent;
+}
+
+.say_hello {
+  animation: fade-in-up 600ms ease-in-out;
+}
+
+.name {
+  animation: fade-in-up 1200ms ease-in-out;
+}
+
+.position {
+  animation: fade-in-up 1900ms ease-in-out;
+}
+
+.desc {
+  animation: fade-in-up 2600ms ease-out;
+}
+
+.btn {
+  animation: fade-in-right 2400ms ease-in-out;
+}
+
+@keyframes handshake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(16deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(16deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(0.7rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0%,
+  75% {
+    opacity: 0;
+    transform: translateX(-0.8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

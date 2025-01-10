@@ -1,0 +1,22 @@
+.container {
+  grid-template-rows: 1fr auto 1fr;
+  animation: 3.5s container-animation ease-in-out;
+}
+
+@keyframes container-animation {
+  0%,
+  70% {
+    gap: 60vh;
+  }
+}
+
+.icon_container {
+  animation: 3.5s icon-animation ease-in-out;
+}
+
+@keyframes icon-animation {
+  0%,
+  85% {
+    opacity: 0;
+  }
+}

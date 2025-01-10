@@ -1,0 +1,98 @@
+.container {
+  animation: container-animation linear;
+  animation-timeline: scroll();
+}
+
+@keyframes container-animation {
+  0%,
+  6% {
+    z-index: -1;
+  }
+  12%,
+  52% {
+    z-index: 1;
+  }
+
+  60%,
+  100% {
+    z-index: -1;
+  }
+}
+
+.title {
+  animation: title-fade linear;
+  animation-timeline: scroll();
+}
+
+@keyframes title-fade {
+  0%,
+  6% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  12%,
+  52% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60%,
+  100% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+}
+
+.desc {
+  animation: desc-fade linear;
+  animation-timeline: scroll();
+}
+
+@keyframes desc-fade {
+  0%,
+  14% {
+    opacity: 0;
+  }
+  20%,
+  44% {
+    opacity: 1;
+  }
+  54%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes title-fade {
+    0%,
+    6% {
+      opacity: 0;
+      transform: translateY(20dvh);
+    }
+    10%,
+    45% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50%,
+    100% {
+      opacity: 0;
+      transform: translateY(-5rem);
+    }
+  }
+
+  @keyframes desc-fade {
+    0%,
+    14% {
+      opacity: 0;
+    }
+    20%,
+    40% {
+      opacity: 1;
+    }
+    45%,
+    100% {
+      opacity: 0;
+    }
+  }
+}

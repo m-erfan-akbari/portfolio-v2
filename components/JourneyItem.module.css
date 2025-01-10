@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 0.5rem;
+
+  animation: container-animation linear;
+  animation-timeline: scroll();
+}
+
+.circle {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.line {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: center;
+}
+
+.title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.desc {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+@keyframes container-animation {
+  0%,
+  8% {
+    opacity: 0;
+    transform: translateY(30rem);
+  }
+  16% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    transform: translateY(-140rem);
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes container-animation {
+    0%,
+    8% {
+      opacity: 0;
+      transform: translateY(110dvh);
+    }
+    12% {
+      opacity: 1;
+    }
+    65%,
+    100% {
+      transform: translateY(-380dvh);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  animation: container-animation linear;
+  animation-timeline: scroll();
+}
+
+@keyframes container-animation {
+  0%,
+  80% {
+    z-index: -1;
+    opacity: 0;
+    gap: 120rem;
+  }
+  98% {
+    z-index: 1;
+    opacity: 1;
+    gap: 1.25rem;
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes container-animation {
+    0%,
+    80% {
+      z-index: -1;
+      opacity: 0;
+      margin-top: 50dvh;
+    }
+    85% {
+      z-index: 1;
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+}

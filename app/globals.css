@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: MerriweatherSans;
+  src: url("../public/MerriweatherSans-VariableFont_wght.ttf");
+}
+
+:root {
+  --color-light-primary: #0048a7;
+  --color-primary: #09192e;
+
+  --color-light-secondary: #694414;
+  --color-secondary: #2e1e09;
+
+  --color-light-0: #fff;
+  --color-light-100: #eeeeee;
+  --color-light-200: #b3b3b3;
+  --color-light-300: #a0a0a0;
+  --color-light-400: #808080;
+  --color-light-500: #6d6d6d;
+  --color-light-600: #575757;
+  --color-light-700: #424242;
+  --color-light-800: #313131;
+  --color-light-900: #202020;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: MerriweatherSans, "Segoe UI" !important;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply shadow-inner shadow-slate-700 rounded-md;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-md;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+.btn-primary {
+  @apply bg-teal-300 text-slate-800 font-semibold rounded-md px-2 py-1;
+}
+
+/* BREAKPOINTS */
+/* more than 1200px */
+@media (min-width: 2000px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+/* 979px */
+@media (max-width: 979px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+}

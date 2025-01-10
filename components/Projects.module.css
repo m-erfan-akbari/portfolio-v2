@@ -1,0 +1,80 @@
+.container {
+  animation: container-animation linear;
+  animation-timeline: scroll();
+}
+@keyframes container-animation {
+  0%,
+  52% {
+    z-index: -1;
+  }
+  60%,
+  80% {
+    z-index: 1;
+  }
+  90%,
+  100% {
+    z-index: -1;
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes container-animation {
+    0%,
+    41% {
+      z-index: -1;
+    }
+    42%,
+    80% {
+      z-index: 1;
+    }
+    90%,
+    100% {
+      z-index: -1;
+    }
+  }
+}
+
+.title {
+  animation: title-fade linear;
+  animation-timeline: scroll();
+}
+
+@keyframes title-fade {
+  0%,
+  42% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  60%,
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90%,
+  100% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes title-fade {
+    0%,
+    42% {
+      opacity: 0;
+      transform: translateX(-5rem);
+    }
+
+    60%,
+    80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    85%,
+    100% {
+      opacity: 0;
+      transform: translateX(5rem);
+    }
+  }
+}
