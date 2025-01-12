@@ -5,7 +5,7 @@ import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
-    <main className={`h-[400rem] portrait:h-[2000rem]`}>
+    <main className={`h-[400rem] portrait:h-[1500rem]`}>
       <About />
       <Journey />
       <Projects />
