@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import styles from './About.module.css'
-import ScrollButton from './ScrollButton'
+import ScrollDownIndicator from './ScrollDownIndicator'
 
 export default function About() {
   return (
@@ -28,14 +29,21 @@ export default function About() {
           I build user friendly and engaging web experiences.
           <br /> I am passionate about find or creating solutions to challenges.
         </p>
-
-        {/* <button className={`btn-primary mt-3 ${styles.btn}`}>
-          Call with me
-        </button> */}
       </div>
-      <div className={`text-9xl portrait:text-[12rem] ${styles.hand}`}>👋</div>
 
-      <ScrollButton />
+      <div
+        className={`${styles.image_container} relative overflow-hidden rounded-lg`}
+      >
+        <Image src={'/picture/programmer.gif'} alt="Programmer image" fill />
+      </div>
+
+      <div
+        className={`${styles.scrolldown} absolute bottom-0 left-0 right-0 top-0 -z-10`}
+      >
+        <ScrollDownIndicator />
+      </div>
+
+      {/* <div className={`text-9xl portrait:text-[12rem] ${styles.hand}`}>👋</div> */}
     </section>
   )
 }

@@ -39,23 +39,10 @@
     24%,
     100% {
       z-index: -1;
-      gap: 120rem;
+      gap: 50rem;
       opacity: 0;
     }
   }
-}
-
-.hand {
-  animation:
-    fade-in 3000ms ease,
-    handshake 2100ms 3000ms infinite;
-  transform-origin: 75% 75%;
-  display: inline-block;
-  cursor: default;
-}
-
-.hand::selection {
-  background-color: transparent;
 }
 
 .say_hello {
@@ -78,25 +65,15 @@
   animation: fade-in-right 2400ms ease-in-out;
 }
 
-@keyframes handshake {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(16deg);
-  }
-  20% {
-    transform: rotate(-6deg);
-  }
-  30% {
-    transform: rotate(16deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
+.image_container {
+  width: 16dvw;
+  height: calc(16dvw / 1.333);
+  animation: fade-in-up 4000ms ease-out;
+}
+
+.scrolldown {
+  animation: fade-with-scroll linear;
+  animation-timeline: scroll();
 }
 
 @keyframes fade-in {
@@ -130,5 +107,23 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fade-with-scroll {
+  0% {
+    opacity: 1;
+  }
+  4%,
+  50% {
+    opacity: 0;
+    transform: translateY(-5dvh);
+  }
+}
+
+@media (orientation: portrait) {
+  .image_container {
+    width: 20vh;
+    height: calc(20vh / 1.333);
   }
 }
