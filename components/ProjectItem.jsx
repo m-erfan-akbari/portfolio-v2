@@ -13,7 +13,7 @@ export default function ProjectItem({ project, isEven }) {
         className={`relative h-[calc(50vw_/_2.22)] w-[50vw] overflow-clip rounded-md shadow-md shadow-slate-900 hover:z-20 hover:shadow-lg portrait:mx-auto portrait:!h-[30vw] portrait:w-[calc(30vw_/_0.45)] ${styles.image_container} ${isEven ? 'landscape:ms-auto' : ''}`}
       >
         <Link
-          className={`hover:bg-hidden absolute bottom-0 left-0 right-0 top-0 z-10 cursor-pointer bg-cyan-700 opacity-70 hover:opacity-0 portrait:opacity-30`}
+          className={`hover:bg-hidden absolute bottom-0 left-0 right-0 top-0 z-10 cursor-pointer bg-cyan-800 opacity-70 hover:opacity-0 portrait:opacity-30`}
           href={website || picture}
           target="_blank"
         />
