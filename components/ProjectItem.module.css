@@ -37,15 +37,15 @@
       opacity: 0;
       transform: translateY(110dvh);
     }
-    42% {
+    45% {
       z-index: 1;
     }
-    60% {
+    65% {
       z-index: 1;
       opacity: 1;
       transform: translateY(0);
     }
-    90%,
+    100%,
     100% {
       opacity: 0;
       transform: translateY(-280dvh);

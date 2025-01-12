@@ -47,14 +47,14 @@
 @media (orientation: portrait) {
   @keyframes container-animation {
     0%,
-    8% {
+    6% {
       opacity: 0;
       transform: translateY(110dvh);
     }
     12% {
       opacity: 1;
     }
-    65%,
+    80%,
     100% {
       transform: translateY(-380dvh);
     }

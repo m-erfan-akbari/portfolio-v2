@@ -70,11 +70,11 @@
       transform: translateY(20dvh);
     }
     10%,
-    45% {
+    50% {
       opacity: 1;
       transform: translateY(0);
     }
-    50%,
+    60%,
     100% {
       opacity: 0;
       transform: translateY(-5rem);
@@ -83,14 +83,14 @@
 
   @keyframes desc-fade {
     0%,
-    14% {
+    7% {
       opacity: 0;
     }
-    20%,
+    18%,
     40% {
       opacity: 1;
     }
-    45%,
+    50%,
     100% {
       opacity: 0;
     }

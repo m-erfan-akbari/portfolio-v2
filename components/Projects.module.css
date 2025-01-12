@@ -17,23 +17,6 @@
   }
 }
 
-@media (orientation: portrait) {
-  @keyframes container-animation {
-    0%,
-    41% {
-      z-index: -1;
-    }
-    42%,
-    80% {
-      z-index: 1;
-    }
-    90%,
-    100% {
-      z-index: -1;
-    }
-  }
-}
-
 .title {
   animation: title-fade linear;
   animation-timeline: scroll();
@@ -59,9 +42,24 @@
 }
 
 @media (orientation: portrait) {
+  @keyframes container-animation {
+    0%,
+    41% {
+      z-index: -1;
+    }
+    48%,
+    80% {
+      z-index: 1;
+    }
+    90%,
+    100% {
+      z-index: -1;
+    }
+  }
+
   @keyframes title-fade {
     0%,
-    42% {
+    48% {
       opacity: 0;
       transform: translateX(-5rem);
     }
@@ -71,7 +69,7 @@
       opacity: 1;
       transform: translateX(0);
     }
-    85%,
+    97%,
     100% {
       opacity: 0;
       transform: translateX(5rem);
