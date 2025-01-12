@@ -1,21 +1,21 @@
 import styles from './Contact.module.css'
 
 import Link from 'next/link'
-import { FiGithub, FiLinkedin } from 'react-icons/fi'
-import { LiaTelegramPlane } from 'react-icons/lia'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa6'
+import { FaTelegramPlane } from 'react-icons/fa'
 
 export default function Contact() {
   const contactOptions = [
     {
-      icon: <FiLinkedin />,
+      icon: <FaLinkedinIn />,
       link: 'https://www.linkedin.com/in/erfan-akbari/',
     },
     {
-      icon: <LiaTelegramPlane />,
+      icon: <FaTelegramPlane />,
       link: 'https://t.me/mohammaderrfan',
     },
     {
-      icon: <FiGithub />,
+      icon: <FaGithub />,
       link: 'https://github.com/m-erfan-akbari',
     },
   ]
