@@ -32,9 +32,10 @@ export default function About() {
       </div>
 
       <div
-        className={`${styles.image_container} relative overflow-hidden rounded-lg`}
+        className={`${styles.image_container} relative overflow-hidden rounded-lg shadow-md shadow-stone-900`}
       >
-        <Image src={'/picture/programmer.gif'} alt="Programmer image" fill />
+        {/* <Image src={'/picture/programmer.gif'} alt="Programmer image" fill /> */}
+        <Image src={'/picture/image.jpg'} alt="Programmer image" fill />
       </div>
 
       <div
