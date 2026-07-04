@@ -30,15 +30,14 @@ export default function About() {
       </div>
 
       <div
-        className={`${styles.image_container} shadow-surface border-primary relative overflow-hidden rounded-lg border-4 shadow-md`}
+        className={`${styles.image_container} shadow-surface relative overflow-hidden rounded-lg shadow-md`}
       >
-        <Image src={'/picture/programmer.gif'} alt="Programmer image" fill />
-        {/* <Image
-          src={'/picture/profile.jpg'}
+        <Image
+          src={'/picture/programmer-optimized.gif'}
           alt="Programmer image"
           fill
-          style={{ objectFit: 'cover' }}
-        /> */}
+          className="opacity-80"
+        />
       </div>
 
       <div
@@ -46,8 +45,6 @@ export default function About() {
       >
         <ScrollDownIndicator />
       </div>
-
-      {/* <div className={`text-9xl portrait:text-[12rem] ${styles.hand}`}>👋</div> */}
     </section>
   )
 }

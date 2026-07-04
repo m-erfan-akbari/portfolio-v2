@@ -10,10 +10,10 @@ export default function ProjectItem({ project, isEven }) {
   return (
     <figure className={`relative mb-32 mt-12 ${styles.container}`}>
       <div
-        className={`relative h-[calc(50vw_/_2.22)] w-[50vw] overflow-clip rounded-md shadow-md shadow-surface hover:z-20 hover:shadow-lg portrait:mx-auto portrait:!h-[30vw] portrait:w-[calc(30vw_/_0.45)] ${styles.image_container} ${isEven ? 'landscape:ms-auto' : ''}`}
+        className={`shadow-surface relative h-[calc(50vw_/_2.22)] w-[50vw] overflow-clip rounded-md shadow-md hover:z-20 hover:shadow-lg portrait:mx-auto portrait:!h-[30vw] portrait:w-[calc(30vw_/_0.45)] ${styles.image_container} ${isEven ? 'landscape:ms-auto' : ''}`}
       >
         <Link
-          className={`hover:bg-hidden absolute bottom-0 left-0 right-0 top-0 z-10 cursor-pointer bg-surface opacity-70 hover:opacity-0 portrait:opacity-30`}
+          className={`bg-surface absolute bottom-0 left-0 right-0 top-0 z-10 cursor-pointer opacity-70 hover:opacity-10 portrait:opacity-30`}
           href={website || picture}
           target="_blank"
         />
@@ -28,7 +28,7 @@ export default function ProjectItem({ project, isEven }) {
       >
         <Link href={website}>
           <h4
-            className={`text-2xl font-bold text-primary portrait:mb-1 portrait:text-5xl ${
+            className={`text-primary text-2xl font-bold portrait:mb-1 portrait:text-5xl ${
               isEven ? '' : 'landscape:text-right'
             }`}
           >
@@ -36,7 +36,7 @@ export default function ProjectItem({ project, isEven }) {
           </h4>
         </Link>
         <figcaption
-          className={`max-w-[35vw] rounded-md bg-surface px-3 py-2 font-light tracking-wide text-text portrait:max-w-none portrait:bg-transparent portrait:text-4xl portrait:leading-[3rem] portrait:tracking-wider portrait:text-text-muted ${
+          className={`bg-surface text-text portrait:text-text-muted max-w-[35vw] rounded-md px-3 py-2 font-light tracking-wide portrait:max-w-none portrait:bg-transparent portrait:text-4xl portrait:leading-[3rem] portrait:tracking-wider ${
             isEven ? 'right-auto block' : ''
           }`}
         >
@@ -53,7 +53,7 @@ export default function ProjectItem({ project, isEven }) {
           {tags.map((t, index) => (
             <li
               key={index}
-              className="m-3 inline text-text-muted portrait:block portrait:text-3xl"
+              className="text-text-muted m-3 inline portrait:block portrait:text-3xl"
             >
               {t}
             </li>
