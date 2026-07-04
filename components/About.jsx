@@ -30,10 +30,15 @@ export default function About() {
       </div>
 
       <div
-        className={`${styles.image_container} shadow-surface relative overflow-hidden rounded-lg shadow-md`}
+        className={`${styles.image_container} shadow-surface border-primary relative overflow-hidden rounded-lg border-4 shadow-md`}
       >
-        {/* <Image src={'/picture/programmer.gif'} alt="Programmer image" fill /> */}
-        <Image src={'/picture/image.jpg'} alt="Programmer image" fill />
+        <Image src={'/picture/programmer.gif'} alt="Programmer image" fill />
+        {/* <Image
+          src={'/picture/profile.jpg'}
+          alt="Programmer image"
+          fill
+          style={{ objectFit: 'cover' }}
+        /> */}
       </div>
 
       <div

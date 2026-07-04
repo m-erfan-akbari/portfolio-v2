@@ -23,11 +23,10 @@ export default function Connect() {
 
       <div className="shadow-surface relative h-60 w-60 max-w-[50%] overflow-clip rounded-md shadow-lg portrait:h-[25dvw] portrait:w-[25dvw] portrait:rounded-lg">
         <Image
-          src={'/picture/erfan.png'}
-          // src={'/picture/me2.jpg'}
+          src={'/picture/profile.jpg'}
           alt="My picture"
           fill
-          objectFit="contain"
+          style={{ objectFit: 'cover' }}
         />
       </div>
     </section>
