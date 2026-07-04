@@ -4,26 +4,23 @@
 
 @font-face {
   font-family: MerriweatherSans;
-  src: url("../public/MerriweatherSans-VariableFont_wght.ttf");
+  src: url('../public/MerriweatherSans-VariableFont_wght.ttf');
 }
 
 :root {
-  --color-light-primary: #0048a7;
-  --color-primary: #09192e;
+  --primary: #2c75fc;
+  --primary-hover: #77a8ff;
 
-  --color-light-secondary: #694414;
-  --color-secondary: #2e1e09;
+  --background: #101118;
+  --surface: #181f33;
+  --surface-elevated: #121b2f;
 
-  --color-light-0: #fff;
-  --color-light-100: #eeeeee;
-  --color-light-200: #b3b3b3;
-  --color-light-300: #a0a0a0;
-  --color-light-400: #808080;
-  --color-light-500: #6d6d6d;
-  --color-light-600: #575757;
-  --color-light-700: #424242;
-  --color-light-800: #313131;
-  --color-light-900: #202020;
+  --text: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --border: #24324d;
+  --border-hover: #334155;
 }
 
 *,
@@ -44,7 +41,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: MerriweatherSans, "Segoe UI" !important;
+  font-family: MerriweatherSans, 'Segoe UI' !important;
 }
 
 /* SCROLLBAR */
@@ -55,21 +52,21 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply shadow-inner shadow-slate-700 rounded-md;
+  @apply shadow-border rounded-md shadow-inner;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-700 rounded-md;
+  @apply bg-border rounded-md;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-600;
+  @apply bg-border-hover;
 }
 
 .btn-primary {
-  @apply bg-teal-300 text-slate-800 font-semibold rounded-md px-2 py-1;
+  @apply bg-primary text-text rounded-md px-2 py-1 font-semibold;
 }
 
 /* BREAKPOINTS */

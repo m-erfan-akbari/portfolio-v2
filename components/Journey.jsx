@@ -11,12 +11,12 @@ export default function Journey() {
     >
       <div className={`mx-16 my-12 flex flex-col items-center`}>
         <h1
-          className={`flex items-center justify-center gap-2 text-center font-sans text-3xl font-bold text-slate-50 portrait:text-7xl ${styles.title}`}
+          className={`flex items-center justify-center gap-2 text-center font-sans text-3xl font-bold text-text portrait:text-7xl ${styles.title}`}
         >
           <GiPathDistance /> My journey
         </h1>
         <h6
-          className={`mt-1 font-light text-slate-100 portrait:mt-8 portrait:text-4xl ${styles.desc}`}
+          className={`mt-1 font-light text-text-secondary portrait:mt-8 portrait:text-4xl ${styles.desc}`}
         >
           From Learning to Company
         </h6>

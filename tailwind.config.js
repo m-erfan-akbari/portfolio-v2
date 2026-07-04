@@ -22,6 +22,18 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        primary: 'var(--primary)',
+        'primary-hover': 'var(--primary-hover)',
+        background: 'var(--background)',
+        surface: 'var(--surface)',
+        'surface-elevated': 'var(--surface-elevated)',
+        text: 'var(--text)',
+        'text-secondary': 'var(--text-secondary)',
+        'text-muted': 'var(--text-muted)',
+        border: 'var(--border)',
+        'border-hover': 'var(--border-hover)',
+      },
       keyframes: {
         bounceArrow: {
           '0%, 20%, 50%, 80%, 100%': {

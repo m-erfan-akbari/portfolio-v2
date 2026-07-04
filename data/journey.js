@@ -39,7 +39,7 @@ const journey = [
   {
     title: 'A Successful Internship',
     date: '2023 Summer',
-    description: `After honing my skills through various courses, I was eager to apply them in a real-world setting. My internship at <a href="https://mrk.co.ir" target="_blank" class="text-teal-300" style="color: #5eead4;">MRK</a> provided the perfect opportunity. There, I delved into the Express.js framework, gaining valuable experience. Soon after, I was tasked with designing web pages. The most exciting part was implementing a backend solution using APIs to store user data directly into server-side files.`,
+    description: `After honing my skills through various courses, I was eager to apply them in a real-world setting. My internship at <a href="https://mrk.co.ir" target="_blank" class="text-primary">MRK</a> provided the perfect opportunity. There, I delved into the Express.js framework, gaining valuable experience. Soon after, I was tasked with designing web pages. The most exciting part was implementing a backend solution using APIs to store user data directly into server-side files.`,
     icon: <FaBriefcase />,
     tags: ['Vanilla JavaScript', 'Express.js', 'Restful API', 'HTML-CSS'],
   },

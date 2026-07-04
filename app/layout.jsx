@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} bg-slate-800 text-slate-300 relative`}
+        className={`${inter.className} bg-background text-text relative`}
         suppressHydrationWarning={true}
       >
         <Contact />
